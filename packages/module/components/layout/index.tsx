@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
+import 'antd/es/style/index.less';
 
 interface Props {
   isShowFooter?: boolean;

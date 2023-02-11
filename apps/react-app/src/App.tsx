@@ -1,6 +1,6 @@
 import React from 'react';
-// import { Button } from '@monorepo/ui'
-import { formatTime } from '@monorepo/module/utils'
+import { Button } from '@monorepo/ui'
+// import { formatTime } from '@monorepo/module/utils'
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,7 +13,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <p>
-          现在的时间是：{formatTime(new Date())}
+          <Button></Button>
         </p>
         <a
           className="App-link"

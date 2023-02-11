@@ -1,12 +1,9 @@
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
-  nodeModulesTransform: {
-    type: 'none',
-  },
   routes: [
-    { path: '/', component: '@/pages/index' },
-    { path: '/user', component: '@/pages/user' },
+    { path: "/", component: "index" },
+    { path: "/docs", component: "docs" },
   ],
-  fastRefresh: {},
+  npmClient: 'yarn',
 });

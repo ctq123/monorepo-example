@@ -7,6 +7,10 @@
     "packages/*"
   ],
   "scripts": {
+    "dev:react": "turbo run start --filter=react-app",
+    "build:react": "turbo run build --filter=react-app",
+    "dev:umi": "turbo run start --filter=umi-app",
+    "build:umi": "turbo run build --filter=umi-app",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
