@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+  },
+  "include": [
+    "apps/**/*",
+    "packages/**/*",
+    "typings.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

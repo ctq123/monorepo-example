@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+# production
+dist
+public
+/.vscode
+.umi
+.umirc
+scripts
+.mockStatic
+/*.js
+/config
