@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import 'antd/es/style/index.less';
+import styles from './index.less';
 
 interface Props {
   isShowFooter?: boolean;
@@ -11,7 +11,7 @@ const { Header, Content, Footer, Sider } = Layout;
 const MyLayout: React.FC<Props> = (props) => {
   const { isShowFooter = false } = props;
   return (
-    <Layout>
+    <Layout className={styles.layout}>
       <Header>header</Header>
       <Layout>
         <Sider>left sidebar</Sider>
