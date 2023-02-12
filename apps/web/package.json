@@ -14,9 +14,9 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
-    "@monorepo/module": "*",
-    "@monorepo/ui": "*",
-    "@umijs/max": "^4.0.51",
+    "@monorepo/module": "workspace:*",
+    "@monorepo/ui": "workspace:*",
+    "@umijs/max": "4.0.51",
     "antd": "^5.0.0"
   },
   "devDependencies": {

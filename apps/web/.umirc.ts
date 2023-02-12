@@ -31,6 +31,6 @@ export default defineConfig({
         component: './Table',
     },
   ],
-  npmClient: 'yarn',
+  npmClient: 'pnpm',
 });
 

@@ -10,9 +10,9 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@monorepo/module": "*",
-    "@monorepo/ui": "*",
-    "umi": "^4.0.30"
+    "@monorepo/module": "workspace:*",
+    "@monorepo/ui": "workspace:*",
+    "umi": "4.0.51"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

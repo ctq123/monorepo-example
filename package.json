@@ -2,15 +2,11 @@
   "name": "monorepo-example",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "dev:docs": "lerna --scope docs run start",
-    "build:docs": "lerna --scope docs run build",
-    "dev:web": "lerna --scope web run start",
-    "build:web": "lerna --scope web run build",
+    "dev:docs": "turbo run dev --filter docs",
+    "build:docs": "turbo run build --filter docs",
+    "dev:web": "turbo run dev --filter web",
+    "build:web": "turbo run build --filter web",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -19,12 +15,11 @@
   },
   "devDependencies": {
     "@tsconfig/create-react-app": "1.0.3",
-    "lerna": "^6.3.0",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.4"
+  "packageManager": "pnpm@7.15.0"
 }
