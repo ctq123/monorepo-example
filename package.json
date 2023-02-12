@@ -7,23 +7,24 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:docs": "turbo run start --filter=docs",
-    "build:docs": "turbo run build --filter=docs",
-    "dev:web": "turbo run start --filter=web",
-    "build:web": "turbo run build --filter=web",
+    "dev:docs": "lerna --scope docs run start",
+    "build:docs": "lerna --scope docs run build",
+    "dev:web": "lerna --scope web run start",
+    "build:web": "lerna --scope web run build",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "clean": "rimraf node_modules && lerna clean -y",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@tsconfig/create-react-app": "1.0.3",
+    "lerna": "^6.3.0",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "yarn@1.22.4"
 }
